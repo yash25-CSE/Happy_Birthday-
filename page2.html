@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#211631">
+  <title>Make a Wish 🎂</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/cake.js" defer></script>
+</head>
+<body class="scene-page">
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="star-field" aria-hidden="true"></div>
+  <main class="content-shell cake-shell">
+    <a class="back-link" href="index.html">← Back to the beginning</a>
+    <p class="script-kicker">A very important birthday ritual</p>
+    <h1 class="page-title">Make a <span class="gradient-text">Wish!</span> 🎂</h1>
+    <p class="page-copy">Close your eyes, make a wish, and click to blow the candle. Keep that wish safe in your heart. 🕯️</p>
+
+    <div class="cake-stage" data-cake-stage>
+      <div class="cake-glow"></div>
+      <div class="cake-candles" aria-label="Three candles with glowing flames">
+        <div class="candle candle-one"><span class="flame"></span><span class="wick"></span></div>
+        <div class="candle candle-two"><span class="flame"></span><span class="wick"></span></div>
+        <div class="candle candle-three"><span class="flame"></span><span class="wick"></span></div>
+      </div>
+      <div class="cake cake-top"><span class="icing-drip drip-one"></span><span class="icing-drip drip-two"></span><span class="icing-drip drip-three"></span><span class="cake-sprinkles">✦ · ✧ · ✦ · ✧</span></div>
+      <div class="cake cake-middle"></div><div class="cake cake-bottom"></div>
+      <div class="cake-plate"></div>
+      <div class="cake-decoration decor-one">✿</div><div class="cake-decoration decor-two">✿</div>
+    </div>
+
+    <p class="wish-reveal" data-wish-message aria-live="polite">Your wish is waiting for its little moment…</p>
+    <div class="button-stack">
+      <button class="magic-button" type="button" data-blow-button>Blow the Candle <span aria-hidden="true">💨</span></button>
+      <a class="magic-button magic-button-secondary is-hidden" data-continue-button href="page3.html">Continue to Your Surprise <span aria-hidden="true">💌</span></a>
+    </div>
+    <p class="tiny-note">No microphone needed — tap the button to make the magic happen.</p>
+  </main>
+</body>
+</html>
